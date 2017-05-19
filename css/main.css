@@ -1,0 +1,648 @@
+.card {
+	position: relative;
+	width: 700px;
+	height: 500px;
+	margin: 10px auto;
+	overflow: hidden;
+	background: #011428;
+	background-image: -webkit-linear-gradient(top, #011428, #032a54);
+}
+.ground {
+	position: absolute;
+	width: 670px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #228B22;
+	box-shadow: 0 0 100px #006400 inset;
+}
+.hill-1{
+	bottom: 12px;
+    left: -116px;
+}
+.hill-2{
+    bottom: -36px;
+    left: 215px;
+}
+.hill-3{
+	bottom: -61px;
+    left: -153px;
+}
+.hill-4{
+    bottom: -107px;
+    left: 115px;
+}
+.moon{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #ffffaa;
+	position: absolute;
+	top: 75px;
+	left: 100px;
+	box-shadow: 0 0 40px #ffffaa;
+}
+.stars {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.star {
+	position: absolute;
+	border-radius: 50%;
+	width: 1px;
+	height: 1px;
+	background-color: #ffffff;
+	box-shadow: 0 0 10px 2px #ffffff;
+}
+.star:nth-child(1) {top: 100px;left: 685px;}
+.star:nth-child(2) {top: 185px;left: 210px;}
+.star:nth-child(3) {top: 150px;left: 350px;}
+.star:nth-child(4) {top: 50px;left: 320px;}
+.star:nth-child(5) {top: 155px;left: 33px;}
+.star:nth-child(6) {top: 70px;left: 483px;}
+.star:nth-child(7) {top: 18px;left: 80px;}
+.star:nth-child(8) {top: 70px;left: 575px;}
+.star:nth-child(9) {top: 175px;left: 570px;}
+.star:nth-child(10) {top: 160px;left: 525px;}
+.star:nth-child(12) {top: 190px;left: 480px;}
+.star:nth-child(13) {top: 110px;left: 615px;}
+.star:nth-child(14) {top: 209px;left: 443px;}
+.star:nth-child(11) {top: 270px;left: 417px;}
+
+.meteors {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.meteor{
+	position: absolute;
+	top: 50px;
+	left: 280px;
+	width: 300px;
+	height: 1px;
+	transform: rotate(-45deg);
+	background-image: -webkit-linear-gradient(left, white, rgba(255,255,255,0));
+}
+.meteor:before {
+	content: ' ';
+	position: absolute;
+	width: 4px;
+	height: 5px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 0 14px 4px white;
+	margin-top: -2px;
+}
+.meteor:nth-child(1) {top: 100px;left: 650px;-webkit-animation: meteor 10s linear infinite;}
+.meteor:nth-child(2) {top: -100px;left: 500px;-webkit-animation: meteor 15s linear infinite;}
+.meteor:nth-child(3) {top: -50px;left: 700px;-webkit-animation: meteor 9s linear infinite;}
+.meteor:nth-child(4) {top: 100px;left: 280px;-webkit-animation: meteor 12s linear infinite;}
+.meteor:nth-child(5) {top: 35px;left: 500px;-webkit-animation: meteor 6s linear infinite;}
+
+/****** UFO ******/
+.ufo{
+	position: absolute;
+	-webkit-animation: ufo 20s linear infinite;
+	animation: ufo 20s linear infinite;
+}
+.ufo-top{
+	position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 227px;
+    top: 57px;
+	background: rgb(122,188,255);
+	background: -moz-linear-gradient(top,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%);
+	background: linear-gradient(to bottom,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+}
+.ufo-middle{
+	position: absolute;
+    width: 260px;
+    height: 49px;
+    border-radius: 50%;
+    left: 146px;
+    top: 100px;
+	background: #a7cfdf;
+	background: -moz-linear-gradient(top,  #a7cfdf 0%, #23538a 100%);
+	background: -webkit-linear-gradient(top,  #a7cfdf 0%,#23538a 100%);
+	background: linear-gradient(to bottom,  #a7cfdf 0%,#23538a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
+}
+.leg{
+	position: absolute;
+    width: 5px;
+    height: 20px;
+    background: #2b5b8f;
+}
+.leg-circle{
+	position: absolute;
+    width: 20px;
+    height: 5px;
+    border-radius: 50%;
+    background: inherit;
+    left: -8px;
+    top: -4px;
+}
+.leg-1{
+    transform: rotate(215deg);
+    top: 140px;
+    left: 181px;
+}
+.leg-2{
+	transform: rotate(-215deg);
+    top: 142px;
+    left: 350px;
+}
+.leg-3{
+	transform: rotateX(126deg);
+    top: 144px;
+    left: 270px;
+}
+.ufo-bottom{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellow;
+    left: 221px;
+    top: 124px;
+    box-shadow: 0 0 40px yellow;
+    transform:scale(0);
+    -webkit-animation: ufo-illuminator 20s linear infinite;
+	animation: ufo-illuminator 20s linear infinite;
+}
+.illuminator{
+    border-bottom: 320px solid yellow;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    left: -45px;
+    opacity: 0.5;
+}
+
+.little-1{
+	bottom: 250px;
+	transform: scale(0.2);
+	-webkit-animation: little-ufo-1 10s linear infinite;
+	animation: little-ufo-1 10s linear infinite;
+}
+.little-2{
+	transform: scale(0.3);
+	-webkit-animation: little-ufo-2 20s linear infinite;
+	animation: little-ufo-2 20s linear infinite;
+}
+.little-3{
+	transform: scale(0);
+	-webkit-animation: little-ufo-3 20s linear infinite;
+	animation: little-ufo-3 20s linear infinite;
+}
+.little-2 .ufo-bottom{
+	-webkit-animation: none;
+	animation: none;
+}
+.little-1 .ufo-bottom{
+	-webkit-animation: little-1-illuminator 10s linear infinite;
+	animation: little-1-illuminator 10s linear infinite;
+}
+/****** Cow ******/
+.cow{
+	position: absolute;
+	bottom: 20px;
+	right: 50px;
+	-webkit-animation: cow 20s linear infinite;
+	animation: cow 20s linear infinite;
+}
+.point{
+	position: absolute;
+	border-radius: 50%;
+	background: black;
+}
+.point-1{
+	bottom: 99px;
+    right: 121px;
+	width: 10px;
+	height: 10px;
+}
+.point-2{
+    bottom: 61px;
+    right: 95px;
+    width: 20px;
+	height: 15px;
+}
+.point-3{
+    bottom: 100px;
+    right: 87px;
+    width: 15px;
+	height: 20px;
+}
+.body{
+	position: absolute;
+	width: 100px;
+	height: 75px;
+	border: 3px solid black;
+	border-radius: 50%;
+	background: #fff;
+	bottom: 50px;
+	right: 50px;
+}
+.neck{
+	position: absolute;
+	width: 10px;
+	height: 30px;
+	border: 3px solid black;
+	background: #fff;
+	bottom: 95px;
+    right: 151px;
+    transform: rotate(-42deg);
+}
+.skull{
+    border-bottom: 50px solid white;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    height: 0;
+    width: 21px;
+    position: absolute;
+    bottom: 95px;
+    right: 155px;
+}
+.nose{
+	position: absolute;
+    width: 60px;
+    height: 23px;
+    border: 3px solid black;
+    bottom: -64px;
+    right: -21px;
+    background: #ffcce6;
+    border-radius: 50%;
+}
+.nostril{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	background: black;
+}
+.nostril-1{
+	bottom: 8px;
+	right: 36px;
+}
+.nostril-2{
+	bottom: 8px;
+	right: 20px;
+}
+.ear{
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+	border: 3px solid black;
+}
+.ear-1{
+    bottom: 130px;
+    right: 190px;
+    transform: rotate(-55deg);
+    -webkit-animation: cow-ear-1 2s linear infinite;
+	animation: cow-ear-1 2s linear infinite;
+}
+.ear-2{
+    bottom: 131px;
+    right: 153px;
+    transform: rotate(55deg);
+    -webkit-animation: cow-ear-2 2s linear infinite;
+	animation: cow-ear-2 2s linear infinite;
+}
+.horn{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 20px solid black;
+}
+.horn-1{
+	bottom: 144px;
+    right: 182px;
+}
+.horn-2{
+    bottom: 144px;
+    right: 169px;
+}
+.eye{
+	width: 5px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	background: black;
+}
+.eye-1{
+	bottom: -22px;
+	right: 15px;
+}
+.eye-2{
+	bottom: -22px;
+	right: 2px;
+}
+.cow-leg{
+	position: absolute;
+	width: 10px;
+	border: 3px solid black;
+	background: #fff;
+	border-top: none;
+}
+.hoof{
+	position: absolute;
+    bottom: 0;
+	width: 10px;
+	height: 10px;
+	background: black;
+}
+.cow-leg-1{
+    right: 136px;
+    bottom: 22px;
+	height: 50px;
+}
+.cow-leg-2{
+    right: 114px;
+    bottom: 21px;
+    height: 34px;
+}
+.cow-leg-3{
+	right: 69px;
+    bottom: 28px;
+    height: 29px;
+
+}
+.cow-leg-4{
+	right: 80px;
+    bottom: 14px;
+    height: 40px;
+}
+.tail{
+    position: absolute;
+    width: 10px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid black;
+    bottom: 49px;
+    right: 60px;
+    transform: rotate(-18deg);
+    transform-origin: top;
+    border-top: none;
+    -webkit-animation: cow-tail 3s linear infinite;
+	animation: cow-tail 3s linear infinite;
+}
+.tail-inner{
+	position: absolute;
+	bottom: -4px;
+    right: -6px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid black;
+}
+.little-cow-1{
+	transform: scale(-0.2,0.2);
+	bottom: 100px;
+	left: -80px;
+    -webkit-animation: none;
+	animation: none;
+}
+.little-cow-2{
+    transform: scale(0.3,0.3);
+    bottom: 25px;
+    left: -870px;
+    -webkit-animation: none;
+	animation: none;
+}
+.little-cow-3{
+    transform: scale(-0.2,0.2);
+    bottom: 120px;
+    right: 93px;
+    -webkit-animation: none;
+	animation: none;
+}
+/******Flowers******/
+.flowers{
+	position: absolute;
+}
+.fl-complect{
+	left:0;
+	bottom: -40px;
+}
+.fl-complect-1{
+    bottom: -50px;
+    right: 390px;
+}
+.fl-complect-2{
+	bottom: 79px;
+    right: 528px;
+}
+.fl-complect-3{
+    bottom: 84px;
+    right: 855px;
+}
+.fl-complect-4{
+    bottom: 19px;
+    right: 237px;
+}
+.flower{
+	position: absolute;
+	transform: scale(0.04);
+}
+.fl-1{
+	bottom: -25px;
+    left: -35px;
+}
+.fl-2{
+	bottom: -20px;
+    left: 25px;
+}
+.fl-3{
+    bottom: 50px;
+    left: -20px;
+}
+.fl-4{
+    bottom: 25px;
+    left: 135px;
+}
+.fl-5{
+	bottom: 60px;
+    left: 55px;
+}
+.fl-6{
+    bottom: 20px;
+    left: 55px;
+}
+.fl-7{
+	bottom: 20px;
+    left: 230px;
+}
+.fl-8{
+    bottom: -30px;
+    left: 180px;
+}
+.petals:before,
+.petals:after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+.petals {
+  position: relative;
+  margin-left: 5em;
+}
+.petals,
+.petals:before,
+.petals:after{
+  width: 3em;
+  height: 7em;
+  background: #CCFFFF;
+  opacity: 0.9;
+  border-radius: 50%;
+}
+.petals:before {
+  transform: rotate(-120deg);
+  transform-origin: 1.5em 7.5em;
+}
+.petals:after {
+  transform: rotate(120deg);
+  transform-origin: 1.5em 7.5em;
+}
+.petals:nth-child(2) {
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  transform-origin: 1.5em 7.5em;
+}
+.wrapper {
+  margin: 3em 2em;
+  position: relative;
+}
+/****** Animation *******/
+@-webkit-keyframes meteor {
+	0% {margin-top: -300px; margin-right: -300px; opacity: 1}
+	8% {opacity: 0}
+	10% {margin-top: 300px; margin-left: -600px; opacity: 0}
+	100% {opacity: 0}
+}
+@keyframes meteor {
+	0% {margin-top: -300px; margin-right: -300px; opacity: 1}
+	8% {opacity: 0}
+	10% {margin-top: 300px; margin-left: -600px; opacity: 0}
+	100% {opacity: 0}
+}
+
+@-webkit-keyframes ufo {
+	0% {transform: translate(-600px,100px);}
+	5%{transform: translate(-200px,50px);}	
+	10%{transform: translate(100px,-50px);}
+	25%{transform: translate(250px,50px);}
+	40%{transform: translate(250px,0px);}
+	45%{transform: translate(250px,20px);}
+	50%{transform: translate(250px,0px);}
+	55%{transform: translate(250px,20px);}
+	60%{transform: translate(250px,0px);}
+	65%{transform: translate(250px,20px);}
+	70%{transform: translate(250px,0px);}
+	75%{transform: translate(250px,20px);}
+	100%{transform: scale(0.1,0.1);}	
+}
+@keyframes ufo {
+	0% {transform: translate(-600px,100px);}
+	5%{transform: translate(-200px,50px);}	
+	10%{transform: translate(100px,-50px);}
+	25%{transform: translate(250px,50px);}
+	40%{transform: translate(250px,0px);}
+	45%{transform: translate(250px,20px);}
+	50%{transform: translate(250px,0px);}
+	55%{transform: translate(250px,20px);}
+	60%{transform: translate(250px,0px);}
+	65%{transform: translate(250px,20px);}
+	70%{transform: translate(250px,0px);}
+	75%{transform: translate(250px,20px);}
+	100%{transform: scale(0.1,0.1);}
+	
+}
+
+@-webkit-keyframes ufo-illuminator {
+	0%,40%{transform: scale(0,0);}
+	43%,65%{transform: scale(1,1);}
+	70%,100%{transform: scale(0,0);}	
+}
+@keyframes ufo-illuminator {
+	0%,40%{transform: scale(0,0);}
+	43%,65%{transform: scale(1,1);}
+	70%,100%{transform: scale(0,0);}
+}
+@-webkit-keyframes cow {
+	0%,55%{bottom: 50px; right: 120px;transform: scale(0.5);}
+	55%,100%{transform: scale(0,0);transform: translateY(-100px);}
+}@keyframes cow {
+	0%,50%{bottom: 50px; right: 120px;transform: scale(0.5);}
+	55%,100%{transform: scale(0,0); bottom: 350px;right: 170px;}
+}
+@-webkit-keyframes cow-tail {
+	0%,100%{transform: rotate(-18deg);}
+	50%{transform: rotate(50deg);}
+}@keyframes cow-tail {
+	0%,100%{transform: rotate(-18deg);}
+	50%{transform: rotate(50deg);}
+}
+@-webkit-keyframes cow-ear-1 {
+	0%,100%{transform: rotate(-55deg);}
+	50%{transform: rotate(-80deg);}
+}@keyframes cow-ear-1 {
+	0%,100%{transform: rotate(-55deg);}
+	50%{transform: rotate(-80deg);}
+}
+@-webkit-keyframes cow-ear-2 {
+	0%,100%{transform: rotate(55deg);}
+	50%{transform: rotate(80deg);}
+}@keyframes cow-ear-2 {
+	0%,100%{transform: rotate(55deg);}
+	50%{transform: rotate(80deg);}
+}
+@-webkit-keyframes little-ufo-1 {
+	0%,100%{left: 200px;}
+	50%,70%{left: 50px;}
+}@keyframes little-ufo-1 {
+	0%,100%{left: 200px;}
+	50%,70%{left: 50px;}
+}
+@-webkit-keyframes little-1-illuminator {
+	0%,52%{transform: scale(0,0);}
+	55%,66%{transform: scale(1,1);}
+	70%,100%{transform: scale(0,0);}	
+}
+@keyframes little-1-illuminator {
+	0%,52%{transform: scale(0,0);}
+	55%,66%{transform: scale(1,1);}
+	70%,100%{transform: scale(0,0);}
+}
+@-webkit-keyframes little-ufo-2 {
+	0%{left: 100px; bottom: 150px;}
+	10%{left: 200px; bottom: 200px;}
+	20%{left: 300px;bottom: 300px;}
+	80%,100%{left: 300px;bottom: 350px; transform: scale(0.01);}
+}@keyframes little-ufo-2 {
+	0%{left: 100px; bottom: 150px;}
+	10%{left: 200px; bottom: 200px;}
+	20%{left: 300px;bottom: 300px;}
+	80%,100%{left: 300px;bottom: 350px; transform: scale(0.01);}
+}
+@-webkit-keyframes little-ufo-3 {
+	0%,80%{right: 100px; bottom: 300px;transform: scale(0);}	
+	100%{right: 500px;bottom: 200px; transform: scale(0.7);}
+}@keyframes little-ufo-3 {
+	0%,80%{right: 100px; bottom: 300px;transform: scale(0);}	
+	100%{right: 500px;bottom: 200px; transform: scale(0.7);}
+}
